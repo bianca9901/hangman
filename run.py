@@ -6,10 +6,6 @@ import os
 import colorama
 colorama.init()
 
-""" MAKE CLASS HANGMANGAME, HERE I AM GOING TO ADD REMAINING LIVES, SECRET WORD,
-ETC IN A __INIT___(SELF) SO THAT I CAN MEET THE PASS CRITERIA.(Data Model)
-"""
-
 
 def instructions():
     """Displays game instructions"""
