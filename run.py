@@ -9,13 +9,13 @@ colorama.init()
 def instructions():
     """Displays game instructions"""
     print(colorama.Fore.BLUE + 'Instructions')
-    print("Guess the letter to uncover the secret word.")
-    print("You have a total of 6 lives.")
+    print('Guess the letter to uncover the secret word.')
+    print('You have a total of 6 lives.')
 
 def start_game_messages():
     """Displays that the game is starting"""
-    print(colorama.Fore.CYAN + "\nWelcome to Hangman! :-)\n")
-    print(colorama.Fore.BLUE + "Starting game...")
+    print(colorama.Fore.CYAN + '\nWelcome to Hangman! :-)\n')
+    print(colorama.Fore.BLUE + 'Starting game...')
     print('\nSuccessfully started!\n')
     print(colorama.Fore.LIGHTYELLOW_EX)
 
@@ -55,11 +55,11 @@ def game():
 
     while not game_over:
         display_word(display)
-        player_guess = input("\nGuess a letter:\n").lower()
+        player_guess = input('Guess a letter:\n').lower()
 
         # Input validation
         if len(player_guess) != 1 or not player_guess.isalpha():
-            print("Invalid guess! Please enter a single letter.")
+            print('Invalid guess! Please enter a single letter.')
             continue
 
         correct_guess = check_guess(secret_word, display, player_guess)
@@ -68,13 +68,13 @@ def game():
             remaining_lives -= 1
             if remaining_lives == 0:
                 print_hangman_stage(6)
-                print(colorama.Fore.RED + "\nYOU LOOSE!\n")
+                print(colorama.Fore.RED + '\nYOU LOOSE!\n')
                 break
             else:
                 print_hangman_stage(6 - remaining_lives)
 
         if '_' not in display:
-            print(colorama.Fore.GREEN + "\nYOU WON!\n")
+            print(colorama.Fore.GREEN + '\nYOU WON!\n')
             break
 
 def main():
@@ -88,7 +88,7 @@ def main():
         if selected_option_index == 1:
             clear_screen()
             instructions()
-            input('Press Enter to go back to the menu...')
+            input('Press Enter to go back to the menu...\n')
             clear_screen()
         elif selected_option_index == 0:
             clear_screen()
