@@ -4,7 +4,8 @@ import words_for_hangman
 from simple_term_menu import TerminalMenu
 import os
 import colorama
-colorama.init()
+from colorama import Fore, Back
+colorama.init(autoreset=True)
 
 def go_back_to_menu():
     options = ['Go back',]
@@ -17,15 +18,15 @@ def go_back_to_menu():
 
 def instructions():
     """Displays game instructions"""
-    print(colorama.Fore.BLUE + 'Instructions')
-    print('Guess the letter to uncover the secret word.')
-    print('You have a total of 6 lives.')
+    print(Fore.BLUE + Back.LIGHTYELLOW_EX + 'Instructions')
+    print(Fore.BLUE + 'Guess the letter to uncover the secret word.')
+    print(Fore.BLUE + 'You have a total of 6 lives.')
     go_back_to_menu()
 
 def start_game_messages():
     """Displays that the game is starting"""
-    print(colorama.Fore.CYAN + '\nWelcome to Hangman! :-)\n')
-    print(colorama.Fore.BLUE + 'Starting game...')
+    print(Fore.BLUE + Back.LIGHTYELLOW_EX + '\nWelcome to Hangman! :-)\n')
+    print('Starting game...')
     print('\nSuccessfully started!\n')
     print(colorama.Fore.LIGHTYELLOW_EX)
 
@@ -65,7 +66,7 @@ def game():
 
     while not game_over:
         display_word(display)
-        player_guess = input('Guess a letter:\n').lower()
+        player_guess = input(Fore.MAGENTA + '\nGuess a letter:\n').lower()
 
         # Input validation
         if len(player_guess) != 1 or not player_guess.isalpha():
@@ -84,7 +85,7 @@ def game():
                 print_hangman_stage(6 - remaining_lives)
 
         if '_' not in display:
-            print(colorama.Fore.GREEN + '\nYOU WON!\n')
+            print(colorama.Fore.GREEN + '\nYOU WON! ٩( ^ᴗ^ )۶\n')
             break
 
 def main():
@@ -141,4 +142,9 @@ simple menus in python https://www.youtube.com/watch?v=Zpa-rc9e388
 colorama https://www.youtube.com/watch?v=bg-quTTOeH4
 hangman https://www.youtube.com/watch?v=tMJbCWHAWQ4
 hangman https://www.youtube.com/watch?v=cJJTnI22IF8
+
+
+bug with colorama that made everything after the recent colorama function
+the same color. I fixed it with the help of this video https://www.youtube.com/watch?v=u51Zjlnui4Y
+I implemented autoreset=true. 
 """
