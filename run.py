@@ -6,12 +6,21 @@ import os
 import colorama
 colorama.init()
 
+def go_back_to_menu():
+    options = ['Go back',]
+    menu = TerminalMenu(options, title='Menu')
+    selected_option_index = menu.show()
+
+    if selected_option_index == 0:
+        clear_screen()
+        main()
 
 def instructions():
     """Displays game instructions"""
     print(colorama.Fore.BLUE + 'Instructions')
     print('Guess the letter to uncover the secret word.')
     print('You have a total of 6 lives.')
+    go_back_to_menu()
 
 def start_game_messages():
     """Displays that the game is starting"""
@@ -69,8 +78,8 @@ def game():
             remaining_lives -= 1
             if remaining_lives == 0:
                 print_hangman_stage(6)
-                print(colorama.Fore.RED + '\nYOU LOOSE!\n')
-                break
+                print(colorama.Fore.RED + '\nYOU LOOSE! ( ɵ̥̥︹ɵ̥̥)\n')
+                go_back_to_menu()
             else:
                 print_hangman_stage(6 - remaining_lives)
 
@@ -86,15 +95,15 @@ def main():
         menu = TerminalMenu(options, title='Menu')
         selected_option_index = menu.show()
 
-        if selected_option_index == 1:
+        if selected_option_index == 0:
+            clear_screen()
+            start_game_messages()
+            game()   
+        elif selected_option_index == 1:
             clear_screen()
             instructions()
             input('Press Enter to go back to the menu...\n')
             clear_screen()
-        elif selected_option_index == 0:
-            clear_screen()
-            start_game_messages()
-            game()     
 main()
 
 
