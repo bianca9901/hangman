@@ -58,7 +58,7 @@ def game():
     print_hangman_stage(0)
 
     secret_word = random.choice(words_for_hangman.words)
-    print(secret_word)
+    #print(secret_word)
 
     display = ['_'] * len(secret_word)
 
@@ -80,6 +80,7 @@ def game():
             if remaining_lives == 0:
                 print_hangman_stage(6)
                 print(colorama.Fore.RED + '\nYOU LOOSE! ( ɵ̥̥︹ɵ̥̥)\n')
+                print('The correct word was: ' + secret_word + '\n')
                 go_back_to_menu()
             else:
                 print_hangman_stage(6 - remaining_lives)
