@@ -7,6 +7,7 @@ import colorama
 from colorama import Fore, Back
 colorama.init(autoreset=True)
 
+"""Displays go-back button at the end of the game"""
 def go_back_to_menu():
     options = ['Go back',]
     menu = TerminalMenu(options, title='Menu')
@@ -18,14 +19,14 @@ def go_back_to_menu():
 
 def instructions():
     """Displays game instructions"""
-    print(Fore.BLUE + Back.LIGHTYELLOW_EX + 'Instructions')
+    print(Back.BLUE + 'Instructions')
     print(Fore.BLUE + 'Guess the letter to uncover the secret word.')
     print(Fore.BLUE + 'You have a total of 6 lives.')
     go_back_to_menu()
 
 def start_game_messages():
     """Displays that the game is starting"""
-    print(Fore.BLUE + Back.LIGHTYELLOW_EX + '\nWelcome to Hangman! :-)\n')
+    print(Back.CYAN + '\nWelcome to Hangman! :-)\n')
     print('Starting game...')
     print('\nSuccessfully started!\n')
     print(colorama.Fore.LIGHTYELLOW_EX)
@@ -58,7 +59,6 @@ def game():
     print_hangman_stage(0)
 
     secret_word = random.choice(words_for_hangman.words)
-    #print(secret_word)
 
     display = ['_'] * len(secret_word)
 
@@ -66,7 +66,7 @@ def game():
 
     while not game_over:
         display_word(display)
-        player_guess = input(Fore.MAGENTA + '\nGuess a letter:\n').lower()
+        player_guess = input(Fore.YELLOW + '\nGuess a letter:\n').lower()
 
         # Input validation
         if len(player_guess) != 1 or not player_guess.isalpha():
@@ -94,7 +94,7 @@ def main():
     clear_screen()
     while True:
         options = ['Play', 'Instructions']
-        menu = TerminalMenu(options, title='Menu')
+        menu = TerminalMenu(options, title='Menu ☜(⌒▽⌒)☞')
         selected_option_index = menu.show()
 
         if selected_option_index == 0:
@@ -148,4 +148,11 @@ hangman https://www.youtube.com/watch?v=cJJTnI22IF8
 bug with colorama that made everything after the recent colorama function
 the same color. I fixed it with the help of this video https://www.youtube.com/watch?v=u51Zjlnui4Y
 I implemented autoreset=true. 
+
+
+I had a bug when trying the game, I had set a rule that there should be no special
+characters. However while testing the game I found out there were "-" in some words.
+I searched for underscores in the words file and deleted all words with this character.
 """
+
+
