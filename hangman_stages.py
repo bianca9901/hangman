@@ -1,3 +1,7 @@
+import colorama
+from colorama import Fore, Back
+colorama.init(autoreset=True)
+
 stages = [
     """
     YOU HAVE 6 LIVES
@@ -70,3 +74,6 @@ stages = [
        |     ] [
     """
 ]
+
+stages = [Fore.CYAN + stage for stage in stages]
+
