@@ -20,14 +20,14 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 * As a first-time visitor my goal is to try the Hangman Game application and understand its purpose by reading the instructions.
 
-* As a first-time visitior my goal is to play the game so that I can understand it's feautures.
+* As a first-time visitior my goal is to play the game so that I can understand its feautures.
 
 ### **Returning Visitor Goals:**
 
 * As a returning visitor my goal is to play the game to see if my guessing skills
 has improved.
 
-* As a returning visitor my goal is to play the game together with a friend so that we can suggest letters together. 
+* As a returning visitor my goal is to play the game together with a friend so that we can play together. 
 
 
 ### **Frequent Visitor Goals:**
@@ -51,21 +51,22 @@ then comes back to the home menu.
 
 
 * The Game:
-1. The game begins with a welcoming message. ![Welcome message](documentation/features/)
-2. It then displays inputs to give assurance to the user that the game has started. ![Game has started](documentation/features/)
-3. It then displays the text ''You have 6 lives'' which is the default lives (guessing chances) the user will start with. ![You have 6 lives](documentation/features/)
-4. It also displays the hangman figure, that at the moment is only a pole. ![Hangman stage 1](documentation/features/)
-5. Underneath the hangman stages, underscores will be displayed, the number of underscores is the number of letters. Each underscore represents a hidden letter. For example, _ _ _ would be a word containing three letters. ![Underscores for secret letter](documentation/features/)
-6. Underneath that the user is presented with an input field. "Guess a letter:" The user should then type their first guess. ![Input field](documentation/features/) 
-- If the guess suggested would be anything other than a single letter. The user will get a message saying "Invalid guess! Please enter a single letter. If the user does write anything other than a letter, it won't affect the remaining lives. The input field will just repeat itself and the player will have to try again. ![Invalid guess](documentation/features/)
-7. If the user guesses an incorrect letter, the first body part (the head of the hangman figure) will be drawn, and the remaining lives will decrease to 5. ![Incorrect guess](documentation/features/)
+1. The game begins with a welcoming message. ![Welcome message](documentation/images/features/welcome.png)
+2. It then displays messages to give assurance to the user that the game has started. ![Game has started](documentation/images/features/starting-game.png)
+3. It then displays the text ''You have 6 lives'' which is the default lives (guessing chances) the user will start with. ![You have 6 lives](documentation/images/features/six-lives.png)
+4. It also displays the hangman figure, that at the moment is only a pole. ![Hangman stage 1](documentation/images/features/pole.png)
+5. Underneath the hangman stage, underscores is displayed, the number of underscores is the number of letters. Each underscore represents a hidden letter. For example, _ _ _ _ _ would be a word containing five letters. ![Underscores for secret letter](documentation/images/features/underscores.png)
+6. Underneath the underscores the user is presented with an input field. "Guess a letter:" The user should then type their first guess. ![Input field](documentation/images/features/guess-letter.png) 
+- If the guess suggested would be anything other than a single letter. The user will get a message saying "Invalid guess! Please enter a single letter. If the user does write anything other than a letter, it won't affect the remaining lives. The input field will just repeat itself and the player will have to try again. ![Invalid guess](documentation/images/features/invalid-guess.png)
+7. If the user guesses an incorrect letter, the first body part (the head of the hangman figure) will be drawn, and the remaining lives will decrease to 5. ![Incorrect guess](documentation/images/features/incorrect-guess.png)
 * Important: If an incorrect letter is guessed once again, a life will be taken, therefore the user has to work on their memory skills/or scroll up to see if they had already guessed that letter.
-8. If the user guesses a correct word, the underscore that contains that/or those letters will be filled in. ![Correct guess](documentation/features/)
-* The game will continue this way until the user has guessed the correct word or the user has used all of their 6 lives.
-* If the user loses. They will get a message saying "YOU LOSE!" and they will, at last, know what the secret word was. ![You lose + The correct word displayed](documentation/features/)
-* If the user unravels the secret word, they will be presented with a message displaying "YOU WON". ![You won message](documentation/features/)
+8. If the user guesses a correct word, the underscore that contains that/or those letters will be filled in. ![Correct guess](documentation/images/features/correct-guess.png)
+9 The game will continue this way until the user has guessed the correct word or the user has used all of their 6 lives.
+* If the user loses. They will get a message saying "YOU LOSE!" and they will, at last, know what the secret word was. ![You lose + The correct word displayed](documentation/images/features/you-lose.png)
+* If the user unravels the secret word, they will be presented with a message displaying "YOU WON". ![You won message](documentation/images/features/you-win.png)
+
 * Either if the user wins or loses, they will get a button that if pressed enter, will take them back to the home menu.![Go back menu](documentation/features/)
-9. The user is then taken back to the main menu.
+10. The user is then taken back to the main menu.
 
 ---
 
@@ -73,9 +74,9 @@ then comes back to the home menu.
 
 * At the moment, the user has to remember prevouisly guessed incorrect letters. Even though this could be seen as a part of the game (to remember or to scroll up to remind themselves if they had already guessed that letter), I do want to make a collection in the future, displaying all of the words that has already been guessed right next to the input field.
 
-* A favicon
+* A favicon ??
 
-* A custom 404 page
+* A custom 404 page ??
 
 ---
 
@@ -115,11 +116,11 @@ Please visit [this link](TESTING.md) to find all test-related documentation.
 
 ### Solved Bugs
 
-* There was an issue with colorama that applied all prints after the recent selected color the same color.
+* Initially, it was an issue with colorama, where the selected color would persist and affect all upcoming print statements. 
 
 * I fixed it with the help of [this](https://www.youtube.com/watch?v=u51Zjlnui4Y) video. The solution was to implement a parameter called autoreset=true to the colorama module.
 
-* The bug was solved and afterwards the implementation of colors were handled more effortlessly.
+* The bug was fixed and afterwards I could apply colors to specific print statements without any concerns.
 
 ### Unsolved bugs
 None
