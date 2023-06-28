@@ -78,7 +78,7 @@ def game():
 
         # Input validation
         if len(player_guess) != 1 or not player_guess.isalpha():
-            print('Invalid guess! Please enter a single letter.')
+            print(Fore.RED + '\nInvalid guess! Please enter a single letter.\n')
             continue
 
         correct_guess = check_guess(secret_word, display, player_guess)
@@ -87,15 +87,16 @@ def game():
             remaining_lives -= 1
             if remaining_lives == 0:
                 print_hangman_stage(6)
-                print(colorama.Fore.RED + '\nYOU LOSE! ( ɵ̥̥︹ɵ̥̥)\n')
+                print(Fore.RED + '\nYOU LOSE! ( ɵ̥̥︹ɵ̥̥)\n')
                 print('The correct word was: ' + secret_word + '\n')
                 go_back_to_menu()
             else:
                 print_hangman_stage(6 - remaining_lives)
 
         if '_' not in display:
-            print(colorama.Fore.GREEN + '\nYOU WON! ٩( ^ᴗ^ )۶\n')
-            break
+            print(Fore.GREEN + '\nYOU WON! ٩( ^ᴗ^ )۶\n')
+            go_back_to_menu()
+            
 
 
 def main():
