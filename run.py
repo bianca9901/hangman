@@ -5,7 +5,7 @@ from simple_term_menu import TerminalMenu
 import os
 import colorama
 from colorama import Fore, Back
-colorama.init(autoreset=True)
+colorama.init()
 
 
 def go_back_to_menu():
