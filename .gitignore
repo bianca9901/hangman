@@ -9,3 +9,5 @@ node_modules/
 .venv
 .myenv
 myenv
+.words.py
+words.py
