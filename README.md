@@ -51,7 +51,7 @@ in a row so that I can test my focus and luck.
 1. The game begins with a welcoming message. ![Welcome message](documentation/images/features/welcome.png)
 2. It then displays messages to give assurance to the user that the game has started. ![Game has started](documentation/images/features/starting-game.png)
 3. It then displays the text ''You have 6 lives'' which is the default lives (guessing chances) the user will start with. ![You have 6 lives](documentation/images/features/six-lives.png)
-4. It also displays the hangman figure, that at the moment is only a pole. ![Hangman stage 1](documentation/images/features/pole.png)
+4. It also displays the hangman stage, that at the moment is only a pole. ![Hangman stage 1](documentation/images/features/pole.png)
 5. Underneath the hangman stage, underscores is displayed, the number of underscores is the number of letters. Each underscore represents a hidden letter. For example, _ _ _ _ _ would be a word containing five letters. ![Underscores for secret letter](documentation/images/features/underscores.png)
 6. Underneath the underscores the user is presented with an input field. "Guess a letter:" The user is prompted to type their guess. ![Input field](documentation/images/features/guess-letter.png) 
 - If the guess would be anything other than a single letter, the user will get a message saying "Invalid guess! Please enter a single letter.". However, this will not affect their remaining lives, the input field will just repeat itself and the player will have to try again. ![Invalid guess](documentation/images/features/invalid-guess.png)
@@ -153,12 +153,12 @@ How to make a local clone of this project.
 * [Heroku](https://id.heroku.com/login) was used to deploy my project.
 * [This](https://www.youtube.com/watch?v=u51Zjlnui4Y) video helped me learn how to reset the previously used color to default so that I could always start with a clean slate. 
 * [This](https://www.csestack.org/clear-python-interpreter-console/) article together with the inspiration from my mentor teached me how to clear terminals.
-* [Simple menus in python](https://www.youtube.com/watch?v=Zpa-rc9e388) with the inspiration from my mentor and with the help of this video I learned how to create menus.
+* [Simple menus in python](https://www.youtube.com/watch?v=Zpa-rc9e388) video together with the tips from my mentor teached me how to create menus.
 * [This](https://www.youtube.com/watch?v=cJJTnI22IF8) video gave me the idea to make the hangman game.  
 * [This](https://www.youtube.com/watch?v=tMJbCWHAWQ4) video was great for inspiration and planning the structure of the game. 
 * [These](https://github.com/kying18/hangman/blob/master/hangman_visual.py) figures of the hangman stages inspired me to make my own figures to implement to my game.
 * [This](https://github.com/kying18/hangman/blob/master/words.py) is where the words for the game were taken from. (In my game the words with hyphen-minus were deleted).
-* [This](https://www.youtube.com/watch?v=u51Zjlnui4Y) video helped me fix the colorama bug that made all the colors after the 
+* [This](https://www.youtube.com/watch?v=u51Zjlnui4Y) video helped me apply colors to specific print statements more efortlessly.
 ---
 
 ## Acknowledgments
