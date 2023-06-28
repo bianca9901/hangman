@@ -25,3 +25,4 @@ SAME FOR THIS ONE.
 | If player makes six incorrect guesses | The last hangman stage should be displayed, and the correct word should be displayed. Also a "You lose" message should be shown. | Yes | Yes |
 | Guess all letters correctly | If the player guesses all the letters correctly a "You won" message should be displayed. | Yes | Yes |
 | Select "Go back" after winning or losing | When pressed enter, the main menu should be displayed. | Yes | Yes |
+___
