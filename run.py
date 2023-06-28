@@ -7,15 +7,17 @@ import colorama
 from colorama import Fore, Back
 colorama.init(autoreset=True)
 
-"""Displays go-back button at the end of the game"""
+
 def go_back_to_menu():
-    options = ['Go back',]
+    """Displays go-back option at the end of the game"""
+    options = ['Go back']
     menu = TerminalMenu(options, title='Menu')
     selected_option_index = menu.show()
 
     if selected_option_index == 0:
         clear_screen()
         main()
+
 
 def instructions():
     """Displays game instructions"""
@@ -24,6 +26,7 @@ def instructions():
     print(Fore.BLUE + 'You have a total of 6 lives.')
     go_back_to_menu()
 
+
 def start_game_messages():
     """Displays that the game is starting"""
     print(Back.CYAN + '\nWelcome to Hangman! :-)\n')
@@ -31,13 +34,16 @@ def start_game_messages():
     print('\nSuccessfully started!\n')
     print(colorama.Fore.LIGHTYELLOW_EX)
 
+
 def clear_screen():
     """Clears the terminal screen"""
     _ = os.system('cls' if os.name == 'nt' else 'clear')
 
+
 def display_word(word):
     """Prints the current state of the word"""
     print(' '.join(word))
+
 
 def check_guess(secret_word, display, player_guess):
     """Checks if the guessed letter is correct and updates the display"""
@@ -49,9 +55,11 @@ def check_guess(secret_word, display, player_guess):
             correct_guess = True
     return correct_guess
 
+
 def print_hangman_stage(stage):
     """Prints the hangman stages"""
     print(hangman_stages.stages[stage])
+
 
 def game():
     """Hangman game logic"""
@@ -79,7 +87,7 @@ def game():
             remaining_lives -= 1
             if remaining_lives == 0:
                 print_hangman_stage(6)
-                print(colorama.Fore.RED + '\nYOU LOOSE! ( ɵ̥̥︹ɵ̥̥)\n')
+                print(colorama.Fore.RED + '\nYOU LOSE! ( ɵ̥̥︹ɵ̥̥)\n')
                 print('The correct word was: ' + secret_word + '\n')
                 go_back_to_menu()
             else:
@@ -88,6 +96,7 @@ def game():
         if '_' not in display:
             print(colorama.Fore.GREEN + '\nYOU WON! ٩( ^ᴗ^ )۶\n')
             break
+
 
 def main():
     """Execution of game"""
@@ -100,59 +109,12 @@ def main():
         if selected_option_index == 0:
             clear_screen()
             start_game_messages()
-            game()   
+            game()
         elif selected_option_index == 1:
             clear_screen()
             instructions()
             input('Press Enter to go back to the menu...\n')
             clear_screen()
+
+
 main()
-
-
-
-"""
-Possible feautures to add: 
-
--- PROBLEM! IF I WANT TO PLAY AGAIN AFTER WIN/LOSS, THE MENU IS BUGGING
-IT IS TAKING ME TO MENU ONE INSTEAD OF RESTARTING GAME????
-
---- PROBLEM! IT IS NOT CLEARING THE TERMINAL PROPPERLY, I NEED TO ADD SOME MORE
-CLEAR FUNCTIONS SOMEWEHERE
-
--- PROBLEM, THE FIRST AND LAST HANGMAN FIGURE IS NOT DISPLAYING??? ---
-fixed.
-
----RIGHT NOW I HAVE A PROBLEM WITH THE INSTRUCTIONS OPTION ONLY WORKS ONCE, WHEN CLICKED THE
-SECOND TIME IT TAKES THE PLAYER TO THE GAME.
-fixed.
-
--- Show how many lives left with numbers as well, to complement the hangman figure. --
-*(Added numbers to hangman file, but there should be other solution so that I 
-can show more skills)
-
--- Inform the player if the letter selected has already been guessed in the round. --
-
--- Add message to player if they'd write something other than a letter. ---
-
--- Do you want to play again? press enter (or something). --
-
---- Add words ---
-
-clear terminal https://www.csestack.org/clear-python-interpreter-console/
-simple menus in python https://www.youtube.com/watch?v=Zpa-rc9e388
-colorama https://www.youtube.com/watch?v=bg-quTTOeH4
-hangman https://www.youtube.com/watch?v=tMJbCWHAWQ4
-hangman https://www.youtube.com/watch?v=cJJTnI22IF8
-
-
-bug with colorama that made everything after the recent colorama function
-the same color. I fixed it with the help of this video https://www.youtube.com/watch?v=u51Zjlnui4Y
-I implemented autoreset=true. 
-
-
-I had a bug when trying the game, I had set a rule that there should be no special
-characters. However while testing the game I found out there were "-" in some words.
-I searched for underscores in the words file and deleted all words with this character.
-"""
-
-
