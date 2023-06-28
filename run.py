@@ -74,7 +74,7 @@ def game():
 
     while not game_over:
         display_word(display)
-        player_guess = input(Fore.YELLOW + '\nGuess a letter:\n').lower()
+        player_guess = input(Fore.BLUE + '\nGuess a letter:\n').lower()
 
         # Input validation
         if len(player_guess) != 1 or not player_guess.isalpha():
