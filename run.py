@@ -5,7 +5,7 @@ from simple_term_menu import TerminalMenu
 import os
 import colorama
 from colorama import Fore, Back
-colorama.init()
+colorama.init(autoreset=True)
 
 
 def go_back_to_menu():
@@ -74,7 +74,7 @@ def game():
 
     while not game_over:
         display_word(display)
-        player_guess = input(Fore.BLUE + '\nGuess a letter:\n').lower()
+        player_guess = input(Fore.BLUE + '\n\nGuess a letter:\n\n').lower()
 
         # Input validation
         if len(player_guess) != 1 or not player_guess.isalpha():
@@ -103,8 +103,11 @@ def main():
     """Execution of game"""
     clear_screen()
     while True:
+        print(Back.BLUE + '\n\...T_H_E   H_A_N_G_M_A_N   G_A_M_E.../')
+        print(Back.BLUE + '.--\...\...\```|...|...|´´´/.../.../--.')
+        print(Back.BLUE + '.((\..../...\```>..|..<´´´/....\.../)).')
         options = ['Play', 'Instructions']
-        menu = TerminalMenu(options, title='Menu ☜(⌒▽⌒)☞')
+        menu = TerminalMenu(options, title='\n\n\nMenu ☜(⌒▽⌒)☞\n')
         selected_option_index = menu.show()
 
         if selected_option_index == 0:
