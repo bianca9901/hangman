@@ -19,7 +19,7 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 3. When you decide to play, you are prompted to make your first guess. Press a letter on your keyboard and then press enter.
 
 4. When you have used all of your lives, or figured out the correct letter, You will be presented with a "Go back" option. Press enter and you are taken back to the main menu. Press play to start the game again and you will get a new word. Good luck and have fun!
-
+---
 ## User Stories
 
 ### **First-Time Visitor Goals:**
@@ -83,6 +83,19 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 ## Flowchart
 
+---
+
+## Data model (THIS IS A C.I HEADLINE I DO NOT HAVE DATA MODEL THO. WHAT TO DO?)
+I do not have a data model.
+
+(REMEMBER: DATA STRUCTURES IS HOW DATA IS ORGANIZED, STORED AND MANIPULATED.)
+
+(DATA MODEL SETS RULES TO DEFINE BEHAVIOUR OF OBJECTS)
+
+I have data structures.
+* Lists(SUCH AS MENU OPTIONS, THE WORDS_FOR_HANGMAN LIST)
+* Strings(SUCH AS GAME MESSAGES, INSTRUCTIONS, MENU TITLES ETC)
+___
 
 ## Technologies used
 
@@ -129,10 +142,11 @@ Please visit [this link](TESTING.md) to find all test-related documentation.
 ### Unsolved bugs
 None
 ### Mistakes
-#### In the initial version of my game, I had only one section for the game. In this section, I relied heavily on if/else/elsif statements. This quickly became messy and hard to maintain. However, when I realized the need for a better structure I made some improvements.
+
+In the initial version of my game, I had only one section for the game. In this section, I relied heavily on if/else/elsif statements. This quickly became messy and hard to maintain. However, when I realized the need for a better structure I made some improvements.
 * I defined a lot more functions.
 * I created two sections, "Game logic" and "Main".
-* In the game logic, I implemented the core of the game. Including some, but not all statements, such as the code responsible for the hangman stages updating and input validation, etc.
+* In the game logic, I implemented the core of the game. Including some, but not all statements, (such as the code responsible for the hangman stages updating and input validation, etc.)
 * I made a main section whose responsibility was to hold the previously mentioned newly defined functions, such as "game()" and "instructions()".
 
 These changes made it possible to delete excessive nested if/elif/else statements. It also made the code more organized by implementing two sections for the game. The code is now clean and maintainable and repetition is avoided. 
@@ -141,23 +155,18 @@ These changes made it possible to delete excessive nested if/elif/else statement
 
 ## Deployment
 
-The site was deployed to GitHub pages.
+The project was deployed using Code Institute's mock terminal for Heroku.
 * The steps to deploy are as follows:
 
-* In the GitHub repository, navigate to the Settings tab
-From the source section drop-down menu, select the Main Branch
+* Fork or clone this repository
 
-* Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+* Create a new heroku app
 
-## Local deployment
-How to make a local clone of this project.
+* Set the buildpacks to `python` and `NodeJS` in that order
 
-1. Copy this url https://github.com/bianca9901/cheers-quiz.git
-2. Open terminal.
-3. Type ```git clone``` and paste the url.
-4. Press enter to create your local clone.
+* Link the Heroku app to the repository
 
----
+* Click on Deploy
 
 ## Credits
 
@@ -172,6 +181,9 @@ How to make a local clone of this project.
 * [These](https://github.com/kying18/hangman/blob/master/hangman_visual.py) figures of the hangman stages inspired me to make my own figures to implement to my game.
 * [This](https://github.com/kying18/hangman/blob/master/words.py) is where the words for the game were taken from. (In my game the words with hyphen-minus were deleted).
 * [This](https://www.youtube.com/watch?v=u51Zjlnui4Y) video helped me apply colors to specific print statements more efortlessly.
+* [Code Institute]() for the deployment terminal.
 ---
 
 ## Acknowledgments
+Thank you [Iuliia Konovalova](https://github.com/IuliiaKonovalova), for always giving me valuable feedback, tips and guidance.
+---
