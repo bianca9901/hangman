@@ -1,7 +1,4 @@
 # Hangman
-
-![Logo](documentation/images/logo.png)
-
 ## About
 The Hangman Game is a classic word guessing game that challenges players to unravel a secret word. The task is to guess the word by guessing a letter one at a time. However, be careful! If you guess an incorrect letter, you will lose a life, and a body part of the hangman figure will be drawn.
 
@@ -14,6 +11,15 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 ---
 
+## How to play
+1. Click/Copy this link "..."
+
+2. If you are familiar with the hangman game. Press enter to play. Otherwise, press the downward direction arrow on you keyboard, then press enter. This will take you to the instructions. Press enter again to go back to the main menu.
+
+3. When you decide to play, you are prompted to make your first guess. Press a letter on your keyboard and then press enter.
+
+4. When you have used all of your lives, or figured out the correct letter, You will be presented with a "Go back" option. Press enter and you are taken back to the main menu. Press play to start the game again and you will get a new word. Good luck and have fun!
+
 ## User Stories
 
 ### **First-Time Visitor Goals:**
@@ -24,16 +30,14 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 ### **Returning Visitor Goals:**
 
-* As a returning visitor my goal is to play the game to see if my guessing skills
-has improved.
+* As a returning visitor my goal is to play the game to see if my guessing skills has improved.
 
 * As a returning visitor my goal is to play the game together with a friend so that we can play together. ?DELETE?
 
 
 ### **Frequent Visitor Goals:**
 
-* As a frequent visitor my goal is try to get a winning streak of at least 5 wins
-in a row so that I can test my focus and luck.
+* As a frequent visitor my goal is try to get a winning streak of at least 5 wins in a row so that I can test my focus and luck.
 
 * As a frequent visitor my goal is to play the game so that I can improve my english vocabulary.
 
@@ -44,38 +48,41 @@ in a row so that I can test my focus and luck.
 ![Home Menu](documentation/images/landingpage.png)
 
 ### The instructions:
-* The instructions gives a simple explanation of what the game is about. The user can then click on the Go Back button by pressing enter. This will take the user back to the home menu.
+* The instructions gives a simple explanation of what the game is about. The player can then click on the "Go Back" button by pressing enter. This will take the player back to the home menu.
 ![Instructions](documentation/images/features/)
 
 ### The Game:
 1. The game begins with a welcoming message. ![Welcome message](documentation/images/features/welcome.png)
-2. It then displays messages to give assurance to the user that the game has started. ![Game has started](documentation/images/features/starting-game.png)
-3. It then displays the text ''You have 6 lives'' which is the default lives (guessing chances) the user will start with. ![You have 6 lives](documentation/images/features/six-lives.png)
+2. It then displays messages to give assurance to the player that the game has started. ![Game has started](documentation/images/features/starting-game.png)
+3. It then displays the text ''You have 6 lives'' which is the default lives (guessing chances) the player will start with. ![You have 6 lives](documentation/images/features/six-lives.png)
 4. It also displays the hangman stage, that at the moment is only a pole. ![Hangman stage 1](documentation/images/features/pole.png)
 5. Underneath the hangman stage, underscores is displayed, the number of underscores is the number of letters. Each underscore represents a hidden letter. For example, _ _ _ _ _ would be a word containing five letters. ![Underscores for secret letter](documentation/images/features/underscores.png)
-6. Underneath the underscores the user is presented with an input field. "Guess a letter:" The user is prompted to type their guess. ![Input field](documentation/images/features/guess-letter.png) 
-- If the guess would be anything other than a single letter, the user will get a message saying "Invalid guess! Please enter a single letter.". However, this will not affect their remaining lives, the input field will just repeat itself and the player will have to try again. ![Invalid guess](documentation/images/features/invalid-guess.png)
-7. If the user guesses an incorrect letter, the first body part (the head of the hangman figure) will be drawn, and the remaining lives will decrease to 5. ![Incorrect guess](documentation/images/features/incorrect-guess.png)
-* Important: If an incorrect letter is guessed once again, a life will be taken once again, therefore the user has to work on their memory skills/or scroll up to see if they had already guessed that letter.
-8. If the user guesses a correct letter, the underscore that contains that/or those letters will be filled in. ![Correct guess](documentation/images/features/correct-guess.png)
-9 The game will continue as mentioned above until the user has guessed the correct word or if the user has used all of their 6 lives.
-* If the user loses. They will get a message saying "YOU LOSE!" and they will, at last, know what the secret word was. ![You lose + The correct word displayed](documentation/images/features/you-lose.png)
-* If the user unravels the secret word, they will be presented with a message saying "YOU WON!". ![You won message](documentation/images/features/you-win.png)
+6. Underneath the underscores the player is presented with an input field. "Guess a letter:" The player is prompted to type their guess. ![Input field](documentation/images/features/guess-letter.png) 
+- If the guess would be anything other than a single letter, the player will get a message saying "Invalid guess! Please enter a single letter.". However, this will not affect their remaining lives, the input field will just repeat itself and the player will have to try again. ![Invalid guess](documentation/images/features/invalid-guess.png)
+7. If the player guesses an incorrect letter, the first body part (the head of the hangman figure) will be drawn, and the remaining lives will decrease to 5. ![Incorrect guess](documentation/images/features/incorrect-guess.png)
+* Important: If an incorrect letter is guessed once again, a life will be taken once again, therefore the player has to work on their memory skills/or scroll up to see if they had already guessed that letter.
+8. If the player guesses a correct letter, the underscore that contains that/or those letters will be filled in. ![Correct guess](documentation/images/features/correct-guess.png)
+9 The game will continue as mentioned above until the player has guessed the correct word or if the player has used all of their 6 lives.
+* If the player loses. They will get a message saying "YOU LOSE!" and they will, at last, know what the secret word was. ![You lose + The correct word displayed](documentation/images/features/you-lose.png)
+* If the player unravels the secret word, they will be presented with a message saying "YOU WON!". ![You won message](documentation/images/features/you-win.png)
 
-* Either if the user wins or loses, they will get a button that if pressed enter, will take them back to the home menu.![Go back menu](documentation/features/)
-10. The user is then taken back to the main menu.
+* Either if the player wins or loses, they will get a button that if pressed enter, will take them back to the home menu.![Go back menu](documentation/features/)
+10. The player is then taken back to the main menu.
 
 ---
 
 ## Features left to Implement
 
-* At the moment, the user has to remember prevouisly guessed incorrect letters. Even though this could be seen as a part of the game (to remember or to scroll up to remind themselves if they had already guessed that letter), I do want to make a collection of letters that has already been guessed in the future, displaying all of the words that has already been guessed right next to the input field.
+* At the moment, the player has to remember prevouisly guessed incorrect letters. Even though this could be seen as a part of the game (to remember or to scroll up to remind themselves if they had already guessed that letter), I do want to make a collection of letters that has already been guessed in the future, displaying all of the words that has already been guessed right next to the input field.
 
 * A favicon ??
 
 * A custom 404 page ??
 
 ---
+
+## Flowchart
+
 
 ## Technologies used
 
@@ -100,7 +107,7 @@ was used to host the code on the website.
 was used for version control.
 * [Visual studio code](https://code.visualstudio.com/)
 was used to write the code.
-* [FLOW](..)ASK WHAT FLOWCHART WEBSITE J USED.
+* [FLOW](..) ASK WHAT FLOWCHART WEBSITE J USED.
 * [Heroku](https://id.heroku.com/login) was used to deploy the project.
 
 ---
@@ -122,7 +129,13 @@ Please visit [this link](TESTING.md) to find all test-related documentation.
 ### Unsolved bugs
 None
 ### Mistakes
-* 
+#### In the initial version of my game, I had only one section for the game. In this section, I relied heavily on if/else/elsif statements. This quickly became messy and hard to maintain. However, when I realized the need for a better structure I made some improvements.
+* I defined a lot more functions.
+* I created two sections, "Game logic" and "Main".
+* In the game logic, I implemented the core of the game. Including some, but not all statements, such as the code responsible for the hangman stages updating and input validation, etc.
+* I made a main section whose responsibility was to hold the previously mentioned newly defined functions, such as "game()" and "instructions()".
+
+These changes made it possible to delete excessive nested if/elif/else statements. It also made the code more organized by implementing two sections for the game. The code is now clean and maintainable and repetition is avoided. 
 
 --- 
 
@@ -153,7 +166,7 @@ How to make a local clone of this project.
 * [Heroku](https://id.heroku.com/login) was used to deploy my project.
 * [This](https://www.youtube.com/watch?v=u51Zjlnui4Y) video helped me learn how to reset the previously used color to default so that I could always start with a clean slate. 
 * [This](https://www.csestack.org/clear-python-interpreter-console/) article together with the inspiration from my mentor teached me how to clear terminals.
-* [Simple menus in python](https://www.youtube.com/watch?v=Zpa-rc9e388) video together with the tips from my mentor teached me how to create menus.
+* [This](https://www.youtube.com/watch?v=Zpa-rc9e388) video together with the tips from my mentor teached me how to create menus.
 * [This](https://www.youtube.com/watch?v=cJJTnI22IF8) video gave me the idea to make the hangman game.  
 * [This](https://www.youtube.com/watch?v=tMJbCWHAWQ4) video was great for inspiration and planning the structure of the game. 
 * [These](https://github.com/kying18/hangman/blob/master/hangman_visual.py) figures of the hangman stages inspired me to make my own figures to implement to my game.
