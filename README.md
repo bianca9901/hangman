@@ -152,6 +152,7 @@ In the initial version of my game, I had only one section for all of the code. I
 These changes made it possible to delete excessive nested if/elif/else statements. It also made the code more organized by implementing two sections for the game, one whose responsibility was to hold the logic, and one whose responsibility was to hold the execution. The code is now clean and maintainable and repetition is avoided.
 
 This misstake reminded me of the power of flowcharts. The misstake will also influence future projects positively, as I now recognize the importance of detailed planning instead of relying on an overall plan. 
+
 --- 
 
 ## Deployment
