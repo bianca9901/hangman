@@ -18,7 +18,7 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 3. When you decide to play, you are prompted to make your first guess. Press a letter on your keyboard and then press enter.
 
-4. When you have used all of your lives, or figured out the correct letter, You will be presented with a "Go back" option. Press enter and you are taken back to the main menu. Press play to start the game again and you will get a new word. Good luck and have fun!
+4. When you have used all of your lives, or figured out the correct word, You will be presented with a "Go back" option. Press enter and you are taken back to the main menu. Press play to start the game again and you will get a new word. Good luck and have fun!
 ---
 ## User Stories
 
@@ -32,7 +32,7 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 * As a returning visitor my goal is to play the game to see if my guessing skills has improved.
 
-* As a returning visitor my goal is to play the game together with a friend so that we can play together. ?DELETE?
+* As a returning visitor my goal is to play the game together with a friend so that we can share the fun.
 
 
 ### **Frequent Visitor Goals:**
@@ -48,18 +48,18 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 ![Home Menu](documentation/images/landingpage.png)
 
 ### The instructions:
-* The instructions gives a simple explanation of what the game is about. The player can then click on the "Go Back" button by pressing enter. This will take the player back to the home menu.
+* The instructions give a simple explanation of what the game is about. The player can then click on the "Go Back" button by pressing enter. This will take the player back to the home menu.
 ![Instructions](documentation/images/features/)
 
 ### The Game:
 1. The game begins with a welcoming message. ![Welcome message](documentation/images/features/welcome.png)
 2. It then displays messages to give assurance to the player that the game has started. ![Game has started](documentation/images/features/starting-game.png)
-3. It then displays the text ''You have 6 lives'' which is the default lives (guessing chances) the player will start with. ![You have 6 lives](documentation/images/features/six-lives.png)
+3. It then displays the text ''You have 6 lives'' which is the lives (guessing chances) the player will start with. ![You have 6 lives](documentation/images/features/six-lives.png)
 4. It also displays the hangman stage, that at the moment is only a pole. ![Hangman stage 1](documentation/images/features/pole.png)
 5. Underneath the hangman stage, underscores is displayed, the number of underscores is the number of letters. Each underscore represents a hidden letter. For example, _ _ _ _ _ would be a word containing five letters. ![Underscores for secret letter](documentation/images/features/underscores.png)
 6. Underneath the underscores the player is presented with an input field. "Guess a letter:" The player is prompted to type their guess. ![Input field](documentation/images/features/guess-letter.png) 
 - If the guess would be anything other than a single letter, the player will get a message saying "Invalid guess! Please enter a single letter.". However, this will not affect their remaining lives, the input field will just repeat itself and the player will have to try again. ![Invalid guess](documentation/images/features/invalid-guess.png)
-7. If the player guesses an incorrect letter, the first body part (the head of the hangman figure) will be drawn, and the remaining lives will decrease to 5. ![Incorrect guess](documentation/images/features/incorrect-guess.png)
+7. If the player guesses an incorrect letter, the first body part (the head of the hangman figure) will be drawn, and the lives will decrease to 5. ![Incorrect guess](documentation/images/features/incorrect-guess.png)
 * Important: If an incorrect letter is guessed once again, a life will be taken once again, therefore the player has to work on their memory skills/or scroll up to see if they had already guessed that letter.
 8. If the player guesses a correct letter, the underscore that contains that/or those letters will be filled in. ![Correct guess](documentation/images/features/correct-guess.png)
 9 The game will continue as mentioned above until the player has guessed the correct word or if the player has used all of their 6 lives.
@@ -73,7 +73,7 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 ## Features left to Implement
 
-* At the moment, the player has to remember prevouisly guessed incorrect letters. Even though this could be seen as a part of the game (to remember or to scroll up to remind themselves if they had already guessed that letter), I do want to make a collection of letters that has already been guessed in the future, displaying all of the words that has already been guessed right next to the input field.
+* At the moment, the player has to remember prevouisly guessed incorrect letters. Even though this could be seen as a part of the game (to remember or to scroll up to remind themselves if they had already guessed that letter), In the future I do want to make a collection of letters that have already been guessed, displaying all of them right next to the input field. I would also like to implement an error message saying "You have already guessed that letter".
 
 * A favicon ??
 
@@ -135,7 +135,7 @@ Please visit [this link](TESTING.md) to find all test-related documentation.
 
 * Initially, it was an issue with colorama. The selected color would persist and affect all upcoming print statements. 
 
-* I fixed it with the help of [this](https://www.youtube.com/watch?v=u51Zjlnui4Y) video. The solution was to implement a parameter called autoreset=true to the colorama module.
+* I fixed it with the help of [this](https://www.youtube.com/watch?v=u51Zjlnui4Y) video. The solution was to implement a parameter called "autoreset=true" to the colorama module.
 
 * The bug was fixed and afterwards I could apply colors to specific print statements without any concerns.
 
@@ -143,14 +143,15 @@ Please visit [this link](TESTING.md) to find all test-related documentation.
 None
 ### Mistakes
 
-In the initial version of my game, I had only one section for the game. In this section, I relied heavily on if/else/elsif statements. This quickly became messy and hard to maintain. However, when I realized the need for a better structure I made some improvements.
-* I defined a lot more functions.
-* I created two sections, "Game logic" and "Main".
-* In the game logic, I implemented the core of the game. Including some, but not all statements, (such as the code responsible for the hangman stages updating and input validation, etc.)
-* I made a main section whose responsibility was to hold the previously mentioned newly defined functions, such as "game()" and "instructions()".
+In the initial version of my game, I had only one section for all of the code. In this section, I relied heavily on if/else/elsif statements. This quickly became messy and hard to maintain. However, after having my first project portfolio talk with my mentor, I realized the need for a better structure. Together we made a flowchart and after that I made huge improvements by:
+* Defining a lot more functions.
+* Creating two sections, "Game()" and "Main()".
+* In the game() section, I implemented the core of the game. Including some, but not all statements, (such as the code responsible for the hangman stages updating and input validation, etc.)
+* Giving the main() section the responsibility to hold the previously mentioned newly defined functions, such as "game()" and "instructions()".
 
-These changes made it possible to delete excessive nested if/elif/else statements. It also made the code more organized by implementing two sections for the game. The code is now clean and maintainable and repetition is avoided. 
+These changes made it possible to delete excessive nested if/elif/else statements. It also made the code more organized by implementing two sections for the game, one whose responsibility was to hold the logic, and one whose responsibility was to hold the execution. The code is now clean and maintainable and repetition is avoided.
 
+This misstake reminded me of the power of flowcharts. The misstake will also influence future projects positively, as I now recognize the importance of detailed planning instead of relying on an overall plan. 
 --- 
 
 ## Deployment
@@ -185,5 +186,6 @@ The project was deployed using Code Institute's mock terminal for Heroku.
 ---
 
 ## Acknowledgments
-Thank you [Iuliia Konovalova](https://github.com/IuliiaKonovalova), for always giving me valuable feedback, tips and guidance.
+* Thank you [Iuliia Konovalova](https://github.com/IuliiaKonovalova), for always giving me valuable feedback, tips and guidance.
+* Thank you [Code institute](https://codeinstitute.net), for great learning material, making my first experience with a backend langugage fun!
 ---
