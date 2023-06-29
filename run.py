@@ -1,6 +1,7 @@
 import random
 import hangman_stages
 import words_for_hangman
+import hangman_figure
 from simple_term_menu import TerminalMenu
 import os
 import colorama
@@ -74,12 +75,15 @@ def game():
 
     while not game_over:
         display_word(display)
-        player_guess = input(Fore.BLUE + '\n\nGuess a letter: ' + Fore.YELLOW + '\n\n').lower()
+        player_guess = input(
+          Fore.BLUE + '\n\nGuess a letter: ' +
+          Fore.YELLOW + '\n\n').lower()
         print(Fore.WHITE)
 
         # Input validation
         if len(player_guess) != 1 or not player_guess.isalpha():
-            print(Fore.RED + '\nInvalid guess! Please enter a single letter.\n')
+            print(
+                Fore.RED + '\nInvalid guess! Please enter a single letter.\n')
             continue
 
         correct_guess = check_guess(secret_word, display, player_guess)
@@ -97,16 +101,14 @@ def game():
         if '_' not in display:
             print(Fore.GREEN + '\nYOU WON! ٩( ^ᴗ^ )۶\n')
             go_back_to_menu()
-            
 
 
 def main():
     """Execution of game"""
     clear_screen()
     while True:
-        print(Back.BLUE + '\n\...T_H_E   H_A_N_G_M_A_N   G_A_M_E.../')
-        print(Back.BLUE + '.--\...\...\```|...|...|´´´/.../.../--.')
-        print(Back.BLUE + '.((\..../...\```>..|..<´´´/....\.../)).')
+        print(Back.BLUE + '\n...T_H_E   H_A_N_G_M_A_N   G_A_M_E...')
+        print(hangman_figure.hangman_art[0])
         options = ['Play', 'Instructions']
         menu = TerminalMenu(options, title='\n\n\nMenu ☜(⌒▽⌒)☞\n')
         selected_option_index = menu.show()
