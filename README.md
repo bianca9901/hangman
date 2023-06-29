@@ -11,7 +11,7 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 ---
 
-## How to play
+## How to play:
 1. Click/Copy this link "..."
 
 2. If you are familiar with the hangman game. Press enter to play. Otherwise, press the downward direction arrow on you keyboard, then press enter. This will take you to the instructions. Press enter again to go back to the main menu.
@@ -183,7 +183,7 @@ The project was deployed using Code Institute's mock terminal for Heroku.
 * [These](https://github.com/kying18/hangman/blob/master/hangman_visual.py) figures of the hangman stages inspired me to make my own figures to implement to my game.
 * [This](https://github.com/kying18/hangman/blob/master/words.py) is where the words for the game were taken from. (In my game the words with hyphen-minus were deleted).
 * [This](https://www.youtube.com/watch?v=u51Zjlnui4Y) video helped me apply colors to specific print statements more efortlessly.
-* [Code Institute]() for the deployment terminal.
+* [Code Institute](https://codeinstitute.net) for the deployment terminal.
 ---
 
 ## Acknowledgments
