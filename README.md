@@ -60,7 +60,7 @@ The sites repository can be accesed by this[]link
 ![Hangman stage 1](documentation/images/features/hangman-pole.png)
 5. Underneath the hangman stage, underscores is displayed, the number of underscores is the number of letters. Each underscore represents a hidden letter. For example, "_ _ _ _ _ _ _ _ _ " would be a word containing nine letters.                
 ![Underscores for secret letter](documentation/images/features/underscores.png)
-6. Underneath the underscores the player is presented with an input field. "Guess a letter:" The player is prompted to type their guess. 
+6. Underneath the underscores the player is presented with an input field. "Guess a letter:" The player is prompted to type their guess.                         
 ![Input field](documentation/images/features/guess-a-letter.png) 
 - If the guess would be anything other than a single letter, the player will get a message saying "Invalid guess! Please enter a single letter.". However, this will not affect their remaining lives, the input field will just repeat itself and the player will have to try again. ![Invalid guess](documentation/images/features/invalid-guess.png)
 7. If the player guesses an incorrect letter, the first body part (the head of the hangman figure) will be drawn, and the lives will decrease to 5. 
@@ -68,11 +68,11 @@ The sites repository can be accesed by this[]link
 * Important: If an incorrect letter is guessed once again, a life will be taken once again, therefore, the player has to work on their memory skills/or scroll up to see if they had already guessed that letter.
 8. If the player guesses a correct letter, the underscore that contains that/or those letters will be filled in. ![Correct guess](documentation/images/features/correct-letter.png)
 9. The game will continue as explained above until the player has guessed the correct word or if the player has used all of their 6 lives.
-* If the player loses. They will get a message saying "YOU LOSE!" and they will, at last, know what the secret word was.
+* If the player loses. They will get a message saying "YOU LOSE!" and they will, at last, know what the secret word was.      
 ![You lose + The correct word displayed](documentation/images/features/you-lose.png)
 * If the player unravels the secret word, they will be presented with a message saying "YOU WON!".
 ![You won message](documentation/images/features/you-won.png)
-* Either if the player wins or loses, they will get a button that if pressed enter, will take them back to the home menu.
+* Either if the player wins or loses, they will get a button that if pressed enter, will take them back to the home menu.           
 ![Go back menu](documentation/images/features/go-back.png)
 10. The player is then taken back to the main menu.
 
