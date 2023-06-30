@@ -7,7 +7,7 @@ Prepare yourself to get focused. Whether you choose to play solo or in a group, 
 
 The application can be accessed by this [link](https://the-hangman-game-f82c19cb0385.herokuapp.com/)
 
-![Computer screens](documentation/computer-screen.png)
+![Computer screens](documentation/images/features/computer-screen.png)
 
 Note: This application is designed to run on pc.
 
@@ -26,7 +26,7 @@ Note: This application is designed to run on pc.
 
 Here is a picture so that you can get a visual understanding of the navigation throughout the application!
 
-![flowchart](documentation/images/navigation.png)
+![app navigation](documentation/images/features/navigation.png)
 ---
 ## User Stories
 
