@@ -9,7 +9,7 @@ The application can be accessed by this [link](https://the-hangman-game-f82c19cb
 
 ![Computer screens](documentation/computer-screen.png)
 
-Note: this application is designed to run on pc.
+Note: This application is designed to run on pc.
 
 ---
 
@@ -71,14 +71,14 @@ Here is a picture so that you can get a visual understanding of the navigation t
 - If the guess would be anything other than a single letter, the player will get a message saying "Invalid guess! Please enter a single letter.". However, this will not affect their remaining lives, the input field will just repeat itself and the player will have to try again. ![Invalid guess](documentation/images/features/invalid-guess.png)
 7. If the player guesses an incorrect letter, the first body part (the head of the hangman figure) will be drawn, and the lives will decrease to 5. 
 ![Incorrect guess](documentation/images/features/incorrect-letter.png)
-* Important: If the same incorrect letter is guessed once again, a life will be taken once again, therefore, the player has to work on their memory skills or alternatatevly scroll up to see if they had already guessed that letter.
+* Important: If the same incorrect letter is guessed once again, a life will be taken once again, therefore, the player has to work on their memory skills or alternatively scroll up to see if they had already guessed that letter.
 8. If the player guesses a correct letter, the underscore that contains that/or those letters will be filled in. ![Correct guess](documentation/images/features/correct-letter.png)
 9. The game will continue as explained above until the player has guessed the correct word or if the player has used all of their 6 lives.
 * If the player loses. They will get a message saying "YOU LOSE!" and they will, at last, know what the secret word was.      
 ![You lose + The correct word displayed](documentation/images/features/you-lose.png)
 * If the player unravels the secret word, they will be presented with a message saying "YOU WON!".
 ![You won message](documentation/images/features/you-won.png)
-* Either if the player wins or loses, they will see a button in the end of the screen that if pressed enter, will take them back to the home menu.           
+* Either if the player wins or loses, they will see a button at the end of the screen that if pressed enter, will take them back to the home menu.           
 ![Go back Menu](documentation/images/features/go-back.png)
 10. The player is then taken back to the home menu.
 
@@ -168,14 +168,14 @@ To run this project locally:
 
 1. This project requires Python to be installed. If you don't have Python, click [here](https://www.python.org/downloads/) to download.
 2. This project contains Python packages and dependencies. Therefore, you need to install pip. You can install pip by opening your terminal and pasting this `sudo apt install python3-pip` and then pressing enter.
-3. Clone this repository by copying this `git clone https://github.com/bianca9901/hangman.git` and pasting it in your terminal and then pressing enter.
+3. Clone this repository by copying this `git clone https://github.com/bianca9901/hangman.git` and pasting it into your terminal and then pressing enter.
 
 
 To deploy to Heroku:
 
 1. Sign up to Heroku. Click [here](https://signup.heroku.com/login)
 
-2. When you have registered your account, click on the "Create new app" button that is displayed on your dashboard.
+2. When you have registered your account, click on the "Create new app" button that is displayed on your dashboard.    
 ![Create new app](documentation/images/deploy-instructions/create-new-app-button.png)
 
 3. Select a name for your app, and choose your region. Then click "Create app".
@@ -190,7 +190,7 @@ To deploy to Heroku:
 
 5. Scroll further down and you will see "Buildpacks". Now click "Add buildpack".   
 ![Buildpacks](documentation/images/deploy-instructions/add-buildpacks.png)   
-  In the pop up you will see a bunch of icons. You should click on the Python icon, and then click on the "Save changes" button. Then click "Add buildpacks" again, this time, click on the NODE.JS icon and the "Save changes" button afterwards. Make sure Python is first in this list , and that NODE.JS is underneath (identical to the image below). The order is important.
+  In the pop up you will see a bunch of icons. You should click on the Python icon, and then click on the "Save changes" button. Then click "Add buildpacks" again, this time, click on the NODE.JS icon and the "Save changes" button afterward. Make sure Python is first in this list, and that NODE.JS is underneath (identical to the image below). The order is important.
 ![Correct order](documentation/images/deploy-instructions/correct-order.png)
 
 6. Scroll back up to the navigation bar, and click on "Deploy".
@@ -203,7 +203,7 @@ In the "Deployment method" section, click on GitHub. Then click on "Connect to G
 8. Scroll down to the "Manual deploy" section and click on "Deploy Branch"
 ![Manual deploy](documentation/images/deploy-instructions/deploy.png)
 
-9. After the app has been built, you will see a message "Your app has successfully deployed" Underneath this message you can click on the "View" button, this is a link that will take you to your deployed application.
+9. After the app has been built, you will see a message "Your app was successfully deployed" Underneath this message you can click on the "View" button, this is a link that will take you to your deployed application.
 ![View app](documentation/images/deploy-instructions/view.png)
 
 ---
@@ -218,9 +218,8 @@ In the "Deployment method" section, click on GitHub. Then click on "Connect to G
 * [This](https://www.youtube.com/watch?v=Zpa-rc9e388) video together with the tips from my mentor taught me how to create menus.
 * [This](https://www.youtube.com/watch?v=cJJTnI22IF8) video gave me the idea to make the hangman game.  
 * [This](https://www.youtube.com/watch?v=tMJbCWHAWQ4) video was great for inspiration and planning the structure of the game. 
-* [These](https://github.com/kying18/hangman/blob/master/hangman_visual.py) figures of the hangman stages inspired me to make my own figures to implement in my game.
-* [This](https://github.com/kying18/hangman/blob/master/words.py) is where the words for the game were taken from. (In my game the words with hyphen-minus were deleted).
-* [This](https://www.youtube.com/watch?v=u51Zjlnui4Y) video helped me apply colors to specific print statements more effortlessly.
+* [These](https://github.com/kying18/hangman/blob/master/hangman_visual.py) figures of the hangman stages inspired me to make my figures to implement in my game.
+* [This](https://github.com/kying18/hangman/blob/master/words.py) is where some of the words for the game were taken from.
 * [Code Institute](https://codeinstitute.net) for the deployment terminal.
 * [Miro](https://miro.com/) for flowchart and visual representation of application navigation.
 ---
