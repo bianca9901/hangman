@@ -5,7 +5,9 @@ The Hangman Game is a classic word guessing game that challenges players to unra
 Prepare yourself to get focused. Whether you choose to play solo or in a group, the Hangman Game guarantees hours of fun while at the same time expanding your vocabulary!
 
 
-The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz/)
+The application can be accessed by this [link](https://bianca9901.github.io/cheers-quiz/)
+
+The sites repository can be accesed by this[]link
 
 ![Different screens](documentation/images/different-screens.png)
 
@@ -32,12 +34,9 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 * As a returning visitor my goal is to play the game to see if my guessing skills has improved.
 
-* As a returning visitor my goal is to play the game together with a friend so that we can share the fun.
-
-
 ### **Frequent Visitor Goals:**
 
-* As a frequent visitor my goal is try to get a winning streak of at least 5 wins in a row so that I can test my focus and luck.
+* As a frequent visitor my goal is to play multiple times so that I can test my focus and luck.
 
 * As a frequent visitor my goal is to play the game so that I can improve my english vocabulary.
 
@@ -73,28 +72,20 @@ The site can be accessed by this [link](https://bianca9901.github.io/cheers-quiz
 
 ## Features left to Implement
 
-* At the moment, the player has to remember prevouisly guessed incorrect letters. Even though this could be seen as a part of the game (to remember or to scroll up to remind themselves if they had already guessed that letter), In the future I do want to make a collection of letters that have already been guessed, displaying all of them right next to the input field. I would also like to implement an error message saying "You have already guessed that letter".
-
-* A favicon ??
-
-* A custom 404 page ??
+* At the moment, the player has to remember prevouisly guessed incorrect letters. Even though this could be seen as a part of the game (to remember or to scroll up to remind themselves if they had already guessed that letter), In the future I do want to implement a logic that as soon as the player redo's a guess, I wan to make a collection of letters that have already been guessed, displaying all of them right next to the input field. I would also like to implement a message saying "You have already guessed that letter".
 
 ---
 
 ## Flowchart
-
+Add img from mentor call and a new one from MIRO.COM. comment on this.
 ---
 
-## Data model (THIS IS A C.I HEADLINE I DO NOT HAVE DATA MODEL THO. WHAT TO DO?)
-I do not have a data model.
+## Data structures
 
-(REMEMBER: DATA STRUCTURES IS HOW DATA IS ORGANIZED, STORED AND MANIPULATED.)
-
-(DATA MODEL SETS RULES TO DEFINE BEHAVIOUR OF OBJECTS)
-
-I have data structures.
-* Lists(SUCH AS MENU OPTIONS, THE WORDS_FOR_HANGMAN LIST)
+During the whole development I used strings and lists for the logic.
+* Lists (SUCH AS MENU OPTIONS, THE WORDS_FOR_HANGMAN LIST)
 * Strings(SUCH AS GAME MESSAGES, INSTRUCTIONS, MENU TITLES ETC)
+These data structures is good for structure and maintainability. 
 ___
 
 ## Technologies used
@@ -149,7 +140,7 @@ In the initial version of my game, I had only one section for all of the code. I
 * In the game() section, I implemented the core of the game. Including some, but not all statements, (such as the code responsible for the hangman stages updating and input validation, etc.)
 * Giving the main() section the responsibility to hold the previously mentioned newly defined functions, such as "game()" and "instructions()".
 
-These changes made it possible to delete excessive nested if/elif/else statements. It also made the code more organized by implementing two sections for the game, one whose responsibility was to hold the logic, and one whose responsibility was to hold the execution. The code is now clean and maintainable and repetition is avoided.
+These changes made it possible to delete excessive nested if/elif/else statements. It also made the code more organized and readable by implementing two sections for the game, one whose responsibility was to hold the logic, and one whose responsibility was to hold the execution. The code is now clean and maintainable and repetition is avoided.
 
 This misstake reminded me of the power of flowcharts. The misstake will also influence future projects positively, as I now recognize the importance of detailed planning instead of relying on an overall plan. 
 
@@ -157,7 +148,7 @@ This misstake reminded me of the power of flowcharts. The misstake will also inf
 
 ## Deployment
 
-The project was deployed using Code Institute's mock terminal for Heroku.
+The project was deployed to Heroku.
 * The steps to deploy are as follows:
 
 * Fork or clone this repository
@@ -169,6 +160,9 @@ The project was deployed using Code Institute's mock terminal for Heroku.
 * Link the Heroku app to the repository
 
 * Click on Deploy
+
+ADD PICTURES TO EVERYTHING: AND PORT 8000 ETC. ADD PIP REQUIREMENTS FOR THOSE WHO DONT HAVE MAC OR LINUX.
+ADD CLONE SECTION.
 
 ## Credits
 
