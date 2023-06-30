@@ -14,7 +14,7 @@ Note: this application is designed to run on pc.
 ---
 
 ## How to play:
-1. Click [Here](https://the-hangman-game-f82c19cb0385.herokuapp.com/) or copy this link https://the-hangman-game-f82c19cb0385.herokuapp.com/ and paste it in your browser to start the application.
+1. Click [Here](https://the-hangman-game-f82c19cb0385.herokuapp.com/) to start the application.
 
 2. You will now see a menu, with two options.
 
@@ -176,7 +176,7 @@ To deploy to Heroku:
 1. Sign up to Heroku. Click [here](https://signup.heroku.com/login)
 
 2. Click on the "Create new app" button that is displayed on the dashboard.
-![Create new app](documentation/images/deploy-instructions/create-new-app.png)
+![Create new app](documentation/images/deploy-instructions/create-new-app-button.png)
 
 3. Select a name for your app, and choose your region. Then click "Create app". This will take you to your newly created applications' information page.
 ![Select name and region](documentation/images/deploy-instructions/name-region.png)
@@ -201,7 +201,7 @@ To deploy to Heroku:
 8. Scroll down to the "Manual deploy" section and click on "Deploy Branch"
 ![Manual deploy](documentation/images/deploy-instructions/deploy.png)
 
-9. After the app has been built, you will see a message "Your app has successfully deployed" Underneath this text you can click on the "View" button, this is a link that will take you to your deployed application.
+9. After the app has been built, you will see a message "Your app has successfully deployed" Underneath this message you can click on the "View" button, this is a link that will take you to your deployed application.
 ![View app](documentation/images/deploy-instructions/view.png)
 
 ---
