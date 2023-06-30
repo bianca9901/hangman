@@ -35,6 +35,6 @@ Showed 1 errors. This error will get ignored because it is the hangman figure ar
 ___
 
 # User experience testing
-The application was tested on 7 different people, in different age groups. The feedback recieved was very helpful. One of the individuals mentioned that some text appeared to "melt in to eachother a bit to much". I adressed this by implementing extra line breaks, "/n". Another indvidual suggested to add some artwork to the home menu page. I adressed this by implementing the hangman_figure.py art piece and I also decorated the headline with some special characters. Overall, the feedback was positive and the users found the game entertaining.
+The application was tested on 7 different people, in different age groups. The feedback recieved was very helpful. One of the individuals mentioned that some text appeared to "melt in to eachother a bit too much". I adressed this by implementing extra line breaks, "/n". Another indvidual suggested to add some artwork to the home menu page. I adressed this by implementing the hangman_figure.py art piece and I also decorated the headline with some special characters. Overall, the feedback was positive and the users found the game entertaining.
 
 ---
