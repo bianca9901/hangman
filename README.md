@@ -178,10 +178,10 @@ To deploy to Heroku:
 2. Click on the "Create new app" button that is displayed on the dashboard.
 ![Create new app](documentation/images/deploy-instructions/create-new-app-button.png)
 
-3. Select a name for your app, and choose your region. Then click "Create app". This will take you to your newly created applications' information page.
+3. Select a name for your app, and choose your region. Then click "Create app".
 ![Select name and region](documentation/images/deploy-instructions/name-region.png)
 
-4. Click on "Settings".
+4. You are now on your newly created applications' information page. Now, click on "Settings".
 ![Settings](documentation/images/deploy-instructions/settings.png)
  Scroll down to Config Vars. Now click "Reveal Config Vars".
 ![Config vars](documentation/images/deploy-instructions/config-vars.png)
@@ -190,10 +190,12 @@ To deploy to Heroku:
 
 5. Scroll further down and you will see "Buildpacks". Now click "Add buildpack".   
 ![Buildpacks](documentation/images/deploy-instructions/add-buildpacks.png)   
-  Click on the Python icon, and then click on the save changes button. Then click "Add buildpacks" again, this time, click on the NODE.JS icon and then click on the save changes button. Make sure Python is first in this list, and that NODE.JS is underneath. The order is important.
+  In the pop up, you should click on the Python icon, and then click on the save changes button. Then click "Add buildpacks" again, this time, click on the NODE.JS icon and then click on the save changes button. Make sure Python is first in this list, and that NODE.JS is underneath. The order is important.
 ![Correct order](documentation/images/deploy-instructions/correct-order.png)
 
-6. Scroll back up to the settings bar, and click on Deploy. In the "Deployment method" section, click on GitHub. Then click on "Connect to GitHub".
+6. Scroll back up to the navigation bar, and click on Deploy.
+![Navbar deploy](documentation/images/deploy-instructions/navbar-deploy.png)
+In the "Deployment method" section, click on GitHub. Then click on "Connect to GitHub".
 ![Deploy](documentation/images/deploy-instructions/connect-to-github.png)
 
 7. Search for your GitHub repository name, when this is filled in, you will be able to click "connect".
