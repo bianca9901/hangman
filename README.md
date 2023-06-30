@@ -1,28 +1,26 @@
 # Hangman
 ## About
-The Hangman Game is a classic word guessing game that challenges players to unravel a secret word. The task is to guess the word by guessing a letter one at a time. However, be careful! If you guess an incorrect letter, you will lose a life, and a body part of the hangman figure will be drawn.
+The Hangman Game is a classic word-guessing game that challenges players to unravel a secret word. The task is to guess the word by guessing a letter one at a time. However, be careful! If you guess an incorrect letter, you will lose a life, and a body part of the hangman figure will be drawn.
 
 Prepare yourself to get focused. Whether you choose to play solo or in a group, the Hangman Game guarantees hours of fun while at the same time expanding your vocabulary!
 
 
-The application can be accessed by this [link](https://bianca9901.github.io/cheers-quiz/)
-
-The sites repository can be accesed by this[]link
+The application can be accessed by this [link](https://the-hangman-game-f82c19cb0385.herokuapp.com/)
 
 ![Computer screens](documentation/computer-screen.png)
 
-Note: this application can only run on pc.
+Note: this application is designed to run on pc.
 
 ---
 
 ## How to play:
 1. Click/Copy this link "..."
 
-2. If you are familiar with the hangman game. Press enter to play. Otherwise, press the downward direction arrow on you keyboard, then press enter. This will take you to the instructions. Press enter again to go back to the main menu.
+2. If you are familiar with the hangman game. Press enter to play. Otherwise, press the downward direction arrow on your keyboard, then press enter. This will take you to the instructions. Press enter again to go back to the main menu.
 
 3. When you decide to play, you are prompted to make your first guess. Press a letter on your keyboard and then press enter.
 
-4. When you have used all of your lives, or figured out the correct word, You will be presented with a "Go back" option. Press enter and you are taken back to the main menu. Press play to start the game again and you will get a new word. Good luck and have fun!
+4. When you have used all of your lives or figured out the correct word, You will be presented with a "Go back" option. Press enter and you are taken back to the main menu. Press play to start the game again and you will get a new word. Good luck and have fun!
 
 Here is a picture so that you can get a visual understanding of the navigation throughout the application!
 
@@ -34,17 +32,17 @@ Here is a picture so that you can get a visual understanding of the navigation t
 
 * As a first-time visitor my goal is to try the Hangman Game application and understand its purpose by reading the instructions.
 
-* As a first-time visitior my goal is to play the game so that I can understand its features.
+* As a first-time visitor my goal is to play the game so that I can understand its features.
 
 ### **Returning Visitor Goals:**
 
-* As a returning visitor my goal is to play the game to see if my guessing skills has improved.
+* As a returning visitor my goal is to play the game to see if my guessing skills have improved.
 
 ### **Frequent Visitor Goals:**
 
 * As a frequent visitor my goal is to play multiple times so that I can test my focus and luck.
 
-* As a frequent visitor my goal is to play the game so that I can improve my english vocabulary.
+* As a frequent visitor my goal is to play the game so that I can improve my English vocabulary.
 
 ## Existing features
 
@@ -64,7 +62,7 @@ Here is a picture so that you can get a visual understanding of the navigation t
 3. It then displays the text ''You have 6 lives'' which is the lives (guessing chances) the player will start with. ![You have 6 lives](documentation/images/features/six-lives.png)
 4. It also displays the hangman stage, that at the moment is only a pole. 
 ![Hangman stage 1](documentation/images/features/hangman-pole.png)
-5. Underneath the hangman stage, underscores is displayed, the number of underscores is the number of letters. Each underscore represents a hidden letter. For example, "_ _ _ _ _ _ _ _ _ " would be a word containing nine letters.                
+5. Underneath the hangman stage, underscores are displayed, the number of underscores is the number of letters. Each underscore represents a hidden letter. For example, "_ _ _ _ _ _ _ _ _ " would be a word containing nine letters.                
 ![Underscores for secret letter](documentation/images/features/underscores.png)
 6. Underneath the underscores the player is presented with an input field. "Guess a letter:" The player is prompted to type their guess.                         
 ![Input field](documentation/images/features/guess-a-letter.png) 
@@ -79,14 +77,14 @@ Here is a picture so that you can get a visual understanding of the navigation t
 * If the player unravels the secret word, they will be presented with a message saying "YOU WON!".
 ![You won message](documentation/images/features/you-won.png)
 * Either if the player wins or loses, they will get a button that if pressed enter, will take them back to the home menu.           
-![Go back menu](documentation/images/features/go-back.png)
+![Go back Menu](documentation/images/features/go-back.png)
 10. The player is then taken back to the main menu.
 
 ---
 
-## Features left to Implement
+## Features Left to Implement
 
-* At the moment, the player has to remember prevouisly guessed incorrect letters. Even though this could be seen as a part of the game (to remember or to scroll up to remind themselves if they had already guessed that letter), In the future I do want to implement a logic that as soon as the player redo's a guess, I wan to make a collection of letters that have already been guessed, displaying all of them right next to the input field. I would also like to implement a message saying "You have already guessed that letter".
+* At the moment, the player has to remember previously guessed incorrect letters. Even though this could be seen as a part of the game (to remember or to scroll up to remind themselves if they had already guessed that letter), In the future, I do want to implement a logic that as soon as the player redoes a guess, I want to make a collection of letters that have already been guessed, displaying all of them right next to the input field. I would also like to implement a message saying "You have already guessed that letter".
 
 ---
 
@@ -104,13 +102,13 @@ ___
 ### Languages:
 * [Python](https://www.python.org/) was used to make the game.
 
-### Frameworks/Libraries, Programmes and Tools:
+### Frameworks/Libraries, Programmes, and Tools:
 #### Python modules/packages:
 #### Standard library imports:
 * [Random](https://docs.python.org/3/library/random.html) was used to randomize the words for each round.
 * [Os](https://docs.python.org/3/library/os.html) was used to clear the terminal.
 
-#### Third party imports:
+#### Third-party imports:
 * [Colorama](https://pypi.org/project/colorama/) was used to make the game colorful.
 * [Simple term menu](https://pypi.org/project/simple-term-menu/) was used to make the menus.
 
@@ -122,7 +120,7 @@ was used to host the code on the website.
 was used for version control.
 * [Visual studio code](https://code.visualstudio.com/)
 was used to write the code.
-* [FLOW](..) ASK WHAT FLOWCHART WEBSITE J USED.
+* [MIRO](https://miro.com/) was used for the flowchart and visual representation of application navigation.
 * [Heroku](https://id.heroku.com/login) was used to deploy the project.
 
 ---
@@ -135,17 +133,17 @@ Please visit [this link](TESTING.md) to find all test-related documentation.
 
 ### Solved Bugs
 
-* Initially, it was an issue with colorama. The selected color would persist and affect all upcoming print statements. 
+* Initially, it was an issue with Colorama. The selected color would persist and affect all upcoming print statements. 
 
-* I fixed it with the help of [this](https://www.youtube.com/watch?v=u51Zjlnui4Y) video. The solution was to implement a parameter called "autoreset=true" to the colorama module.
+* I fixed it with the help of [this](https://www.youtube.com/watch?v=u51Zjlnui4Y) video. The solution was to implement a parameter called "autoreset=true" to the Colorama module.
 
-* The bug was fixed and afterwards I could apply colors to specific print statements without any concerns.
+* The bug was fixed and afterward, I could apply colors to specific print statements without any concerns.
 
 ### Unsolved bugs
 None
 ### Mistakes
 
-In the initial version of my game, I had only one section for all of the code. In this section, I relied heavily on if/else/elsif statements. This quickly became messy and hard to maintain. However, after having my first project portfolio talk with my mentor, I realized the need for a better structure. Together we made a flowchart and after that I made huge improvements by:
+In the initial version of my game, I had only one section for all of the code. In this section, I relied heavily on if/else/elsif statements. This quickly became messy and hard to maintain. However, after having my first project portfolio talk with my mentor, I realized the need for a better structure. Together we made a flowchart and after that, I made huge improvements by:
 * Defining a lot more functions.
 * Creating two sections, "Game()" and "Main()".
 * In the game() section, I implemented the core of the game. Including some, but not all statements, (such as the code responsible for the hangman stages updating and input validation, etc.)
@@ -153,20 +151,20 @@ In the initial version of my game, I had only one section for all of the code. I
 
 These changes made it possible to delete excessive nested if/elif/else statements. It also made the code more organized and readable by implementing two sections for the game, one whose responsibility was to hold the logic, and one whose responsibility was to hold the execution. The code is now clean and maintainable and repetition is avoided.
 
-This misstake reminded me of the power of flowcharts. The misstake will also influence future projects positively, as I now recognize the importance of detailed planning instead of relying on an overall plan. 
+This mistake reminded me of the power of flowcharts. The mistake will also influence future projects positively, as I now recognize the importance of detailed planning instead of relying on an overall plan. 
 
 --- 
 
 ## Deployment
 
 The project was deployed to Heroku.
-The project can be accesesed by this link.
+The project can be accessed by this link.
 
 To run this project locally:
 
-1. This project requirers Python to be installed. Click [here](https://www.python.org/) to download.
-2. This project contains python packages and dependencies. Therefore, you need to install pip. To Install pip you type `sudo apt install python3-pip` in your terminal.
-3. Clone this repository by opening your terminal and paste this `git clone https://github.com/bianca9901/hangman.git`
+1. This project requires Python to be installed. Click [here](https://www.python.org/) to download.
+2. This project contains Python packages and dependencies. Therefore, you need to install pip. To Install pip you type `sudo apt install python3-pip` in your terminal.
+3. Clone this repository by opening your terminal and pasting this `git clone https://github.com/bianca9901/hangman.git`
 
 
 To deploy to Heroku:
@@ -199,7 +197,7 @@ To deploy to Heroku:
 8. Scroll down to the "Manual deploy" section and click on "Deploy Branch"
 ![Manual deploy](documentation/images/deploy-instructions/deploy.png)
 
-9. After the app has been built, you will see a message "Your app has succesfully deployed" underneath this text you can click on the "View" button, this is a link that will take you to your deployed application.
+9. After the app has been built, you will see a message "Your app has successfully deployed" Underneath this text you can click on the "View" button, this is a link that will take you to your deployed application.
 ![View app](documentation/images/deploy-instructions/view.png)
 
 ---
@@ -210,17 +208,18 @@ To deploy to Heroku:
 * [Simple terminal menu](https://pypi.org/project/simple-term-menu/) was used to implement the menus. 
 * [Heroku](https://id.heroku.com/login) was used to deploy my project.
 * [This](https://www.youtube.com/watch?v=u51Zjlnui4Y) video helped me learn how to reset the previously used color to default so that I could always start with a clean slate. 
-* [This](https://www.csestack.org/clear-python-interpreter-console/) article together with the inspiration from my mentor teached me how to clear terminals.
-* [This](https://www.youtube.com/watch?v=Zpa-rc9e388) video together with the tips from my mentor teached me how to create menus.
+* [This](https://www.csestack.org/clear-python-interpreter-console/) article together with the inspiration from my mentor taught me how to clear terminals.
+* [This](https://www.youtube.com/watch?v=Zpa-rc9e388) video together with the tips from my mentor taught me how to create menus.
 * [This](https://www.youtube.com/watch?v=cJJTnI22IF8) video gave me the idea to make the hangman game.  
 * [This](https://www.youtube.com/watch?v=tMJbCWHAWQ4) video was great for inspiration and planning the structure of the game. 
-* [These](https://github.com/kying18/hangman/blob/master/hangman_visual.py) figures of the hangman stages inspired me to make my own figures to implement to my game.
+* [These](https://github.com/kying18/hangman/blob/master/hangman_visual.py) figures of the hangman stages inspired me to make my own figures to implement in my game.
 * [This](https://github.com/kying18/hangman/blob/master/words.py) is where the words for the game were taken from. (In my game the words with hyphen-minus were deleted).
-* [This](https://www.youtube.com/watch?v=u51Zjlnui4Y) video helped me apply colors to specific print statements more efortlessly.
+* [This](https://www.youtube.com/watch?v=u51Zjlnui4Y) video helped me apply colors to specific print statements more effortlessly.
 * [Code Institute](https://codeinstitute.net) for the deployment terminal.
+* [Miro](https://miro.com/) for flowchart and visual representation of application navigation.
 ---
 
 ## Acknowledgments
-* Thank you [Iuliia Konovalova](https://github.com/IuliiaKonovalova), for always giving me valuable feedback, tips and guidance.
-* Thank you [Code institute](https://codeinstitute.net), for great learning material, making my first experience with a backend langugage fun!
+* Thank you [Iuliia Konovalova](https://github.com/IuliiaKonovalova), for always giving me valuable feedback, tips, and guidance.
+* Thank you [Code Institute](https://codeinstitute.net), for great learning material, making my first experience with a backend language fun!
 ---
