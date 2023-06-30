@@ -9,7 +9,9 @@ The application can be accessed by this [link](https://bianca9901.github.io/chee
 
 The sites repository can be accesed by this[]link
 
-![Different screens](documentation/images/different-screens.png)
+![Computer screens](documentation/computer-screen.png)
+
+Note: this application can only run on pc.
 
 ---
 
@@ -21,6 +23,10 @@ The sites repository can be accesed by this[]link
 3. When you decide to play, you are prompted to make your first guess. Press a letter on your keyboard and then press enter.
 
 4. When you have used all of your lives, or figured out the correct word, You will be presented with a "Go back" option. Press enter and you are taken back to the main menu. Press play to start the game again and you will get a new word. Good luck and have fun!
+
+Here is a picture so that you can get a visual understanding of the navigation throughout the application!
+
+![flowchart](documentation/images/navigation.png)
 ---
 ## User Stories
 
@@ -84,16 +90,13 @@ The sites repository can be accesed by this[]link
 
 ---
 
-## Flowchart
-Add img from mentor call and a new one from MIRO.COM. comment on this.
----
-
 ## Data structures
 
-During the whole development I used strings and lists for the logic.
-* Lists (SUCH AS MENU OPTIONS, THE WORDS_FOR_HANGMAN LIST)
-* Strings(SUCH AS GAME MESSAGES, INSTRUCTIONS, MENU TITLES ETC)
-These data structures is good for structure and maintainability. 
+Throughout the whole development, data structures were used to support the logic of the project.
+* Lists were used to store and manage certain aspects of the program, such as the menu options and the words for the hangman game.
+* Strings were used to handle and manipulate text within the program, such as the instructions, menu titles, and messages.
+
+These data structures were used to achieve the functionality of the game and to provide an engaging user experience.
 ___
 
 ## Technologies used
@@ -157,20 +160,49 @@ This misstake reminded me of the power of flowcharts. The misstake will also inf
 ## Deployment
 
 The project was deployed to Heroku.
-* The steps to deploy are as follows:
+The project can be accesesed by this link.
 
-* Fork or clone this repository
+To run this project locally:
 
-* Create a new heroku app
+1. This project requirers Python to be installed. Click [here](https://www.python.org/) to download.
+2. This project contains python packages and dependencies. Therefore, you need to install pip. To Install pip you type `sudo apt install python3-pip` in your terminal.
+3. Clone this repository by opening your terminal and paste this `git clone https://github.com/bianca9901/hangman.git`
 
-* Set the buildpacks to `python` and `NodeJS` in that order
 
-* Link the Heroku app to the repository
+To deploy to Heroku:
 
-* Click on Deploy
+1. Sign up to Heroku. Click [here](https://signup.heroku.com/login)
 
-ADD PICTURES TO EVERYTHING: AND PORT 8000 ETC. ADD PIP REQUIREMENTS FOR THOSE WHO DONT HAVE MAC OR LINUX.
-ADD CLONE SECTION.
+2. Click on the "Create new app" button that is displayed on the dashboard.
+![Create new app](documentation/images/deploy-instructions/create-new-app.png)
+
+3. Select a name for your app, and choose your region. Then click "Create app". This will take you to your newly created applications' information page.
+![Select name and region](documentation/images/deploy-instructions/name-region.png)
+
+4. Click on "Settings".
+![Settings](documentation/images/deploy-instructions/settings.png)
+ Scroll down to Config Vars. Now click "Reveal Config Vars".
+![Config vars](documentation/images/deploy-instructions/config-vars.png)
+ In the field for "KEY" type PORT, in the field for "VALUE" type 8000, and then click add.
+![Port 8000](documentation/images/deploy-instructions/port-8000.png)
+
+5. Scroll further down and you will see "Buildpacks". Now click "Add buildpack".   
+![Buildpacks](documentation/images/deploy-instructions/add-buildpacks.png)   
+  Click on the Python icon, and then click on the save changes button. Then click "Add buildpacks" again, this time, click on the NODE.JS icon and then click on the save changes button. Make sure Python is first in this list, and that NODE.JS is underneath. The order is important.
+![Correct order](documentation/images/deploy-instructions/correct-order.png)
+
+6. Scroll back up to the settings bar, and click on Deploy. In the "Deployment method" section, click on GitHub. Then click on "Connect to GitHub".
+![Deploy](documentation/images/deploy-instructions/connect-to-github.png)
+
+7. Search for your GitHub repository name, when this is filled in, you will be able to click "connect".
+![Repository name](documentation/images/deploy-instructions/repo-name.png)
+8. Scroll down to the "Manual deploy" section and click on "Deploy Branch"
+![Manual deploy](documentation/images/deploy-instructions/deploy.png)
+
+9. After the app has been built, you will see a message "Your app has succesfully deployed" underneath this text you can click on the "View" button, this is a link that will take you to your deployed application.
+![View app](documentation/images/deploy-instructions/view.png)
+
+---
 
 ## Credits
 
