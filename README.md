@@ -58,7 +58,7 @@ The sites repository can be accesed by this[]link
 3. It then displays the text ''You have 6 lives'' which is the lives (guessing chances) the player will start with. ![You have 6 lives](documentation/images/features/six-lives.png)
 4. It also displays the hangman stage, that at the moment is only a pole. 
 ![Hangman stage 1](documentation/images/features/hangman-pole.png)
-5. Underneath the hangman stage, underscores is displayed, the number of underscores is the number of letters. Each underscore represents a hidden letter. For example, _ _ _ _ _ _ _ _ _ would be a word containing nine letters. 
+5. Underneath the hangman stage, underscores is displayed, the number of underscores is the number of letters. Each underscore represents a hidden letter. For example, "_ _ _ _ _ _ _ _ _ " would be a word containing nine letters.                
 ![Underscores for secret letter](documentation/images/features/underscores.png)
 6. Underneath the underscores the player is presented with an input field. "Guess a letter:" The player is prompted to type their guess. 
 ![Input field](documentation/images/features/guess-a-letter.png) 
