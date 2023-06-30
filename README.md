@@ -14,13 +14,15 @@ Note: this application is designed to run on pc.
 ---
 
 ## How to play:
-1. Click/Copy this link "..."
+1. Click [Here](https://the-hangman-game-f82c19cb0385.herokuapp.com/) or copy this link https://the-hangman-game-f82c19cb0385.herokuapp.com/ and paste it in your browser to start the application.
 
-2. If you are familiar with the hangman game. Press enter to play. Otherwise, press the downward direction arrow on your keyboard, then press enter. This will take you to the instructions. Press enter again to go back to the main menu.
+2. You will now see a menu, with two options.
 
-3. When you decide to play, you are prompted to make your first guess. Press a letter on your keyboard and then press enter.
+3. If you are familiar with the hangman game. Press enter to play. Otherwise, press the downward direction arrow on your keyboard, then press enter. This will take you to the instructions. Press enter again to go back to the home menu.
 
-4. When you have used all of your lives or figured out the correct word, You will be presented with a "Go back" option. Press enter and you are taken back to the main menu. Press play to start the game again and you will get a new word. Good luck and have fun!
+4. When you decide to play, you are prompted to make your first guess. Press a letter on your keyboard and then press enter.
+
+5. When you have used all of your lives or figured out the correct word, You will be presented with a "Go back" option. Press enter and you are taken back to the home menu. Press play to start the game again and you will get a new word. Good luck and have fun!
 
 Here is a picture so that you can get a visual understanding of the navigation throughout the application!
 
@@ -84,7 +86,9 @@ Here is a picture so that you can get a visual understanding of the navigation t
 
 ## Features Left to Implement
 
-* At the moment, the player has to remember previously guessed incorrect letters. Even though this could be seen as a part of the game (to remember or to scroll up to remind themselves if they had already guessed that letter), In the future, I do want to implement a logic that as soon as the player redoes a guess, I want to make a collection of letters that have already been guessed, displaying all of them right next to the input field. I would also like to implement a message saying "You have already guessed that letter".
+At the moment, the player has to remember previously guessed incorrect letters. Even though this could be seen as a part of the game (to remember or to scroll up to remind themselves if they had already guessed that letter), I do want to implement a logic in the future that would contribute to a better user experience.
+
+The idea is to collect all the guessed letters and display them right next to the input field. And if the player does type an already guessed letter, I will implement a message saying "You have already guessed that letter!"
 
 ---
 
@@ -158,13 +162,13 @@ This mistake reminded me of the power of flowcharts. The mistake will also influ
 ## Deployment
 
 The project was deployed to Heroku.
-The project can be accessed by this link.
+The project can be accessed by [this](https://the-hangman-game-f82c19cb0385.herokuapp.com/) link.
 
 To run this project locally:
 
-1. This project requires Python to be installed. Click [here](https://www.python.org/) to download.
-2. This project contains Python packages and dependencies. Therefore, you need to install pip. To Install pip you type `sudo apt install python3-pip` in your terminal.
-3. Clone this repository by opening your terminal and pasting this `git clone https://github.com/bianca9901/hangman.git`
+1. This project requires Python to be installed. If you don't have Python, click [here](https://www.python.org/downloads/) to download.
+2. This project contains Python packages and dependencies. Therefore, you need to install pip. You can install pip by opening your terminal and pasting this `sudo apt install python3-pip` in your terminal.
+3. Clone this repository by pasting this `git clone https://github.com/bianca9901/hangman.git` in your terminal.
 
 
 To deploy to Heroku:
