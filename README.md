@@ -190,7 +190,7 @@ How to deploy to Heroku:
 ![Port 8000](documentation/images/deploy-instructions/port-8000.png)
 
 5. Scroll further down and you will see "Buildpacks". Now click "Add buildpack".   
-![Buildpacks](documentation/images/deploy-instructions/add-buildpacks.png)   
+![Buildpacks](documentation/images/deploy-instructions/add-buildpacks.png)  
   In the pop up you will see a bunch of icons. You should click on the Python icon, and then click on the "Save changes" button. Then click "Add buildpacks" again, this time, click on the NODE.JS icon and the "Save changes" button afterward. Make sure Python is first in this list, and that NODE.JS is underneath (identical to the image below). The order is important.
 ![Correct order](documentation/images/deploy-instructions/correct-order.png)
 
@@ -220,7 +220,7 @@ In the "Deployment method" section, click on GitHub. Then click on "Connect to G
 * [This](https://www.youtube.com/watch?v=Zpa-rc9e388) video together with the tips from my mentor taught me how to create menus.
 * [This](https://www.youtube.com/watch?v=cJJTnI22IF8) video gave me the idea to make the hangman game.  
 * [This](https://www.youtube.com/watch?v=tMJbCWHAWQ4) video was great for inspiration and planning the structure of the game. 
-* [These](https://github.com/kying18/hangman/blob/master/hangman_visual.py) figures of the hangman stages inspired me to make my figures to implement in my game.
+* [These](https://github.com/kying18/hangman/blob/master/hangman_visual.py) figures of the hangman stages inspired me to make figures for my game.
 * [This](https://github.com/kying18/hangman/blob/master/words.py) is where some of the words for the game were taken from.
 * [Code Institute](https://codeinstitute.net) for the deployment terminal.
 * [Miro](https://miro.com/) for flowchart and visual representation of application navigation.
