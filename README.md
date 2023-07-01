@@ -137,11 +137,12 @@ Please visit [this link](TESTING.md) to find all test-related documentation.
 
 ### Solved Bugs
 
-* Initially, it was an issue with Colorama. The selected color would persist and affect all upcoming print statements. 
+Originally, it was an issue with Colorama. The selected color for the "Guess a letter:" print statement would persist and affect the letter that the player would put in. This did not look good since it was hard to tell the sections apart. Initially, I did not know where in the code I could change the color of the player input.
 
-* I fixed it with the help of [this](https://www.youtube.com/watch?v=u51Zjlnui4Y) video. The solution was to implement a parameter called "autoreset=true" to the Colorama module.
+In the end, I could fix this issue by implementing an extra + with the color I wanted after the "Guess a letter print", like this, `Fore.BLUE + '\n\nGuess a letter: ' +
+Fore.YELLOW + '\n\n'`
 
-* The bug was fixed and afterward, I could apply colors to specific print statements without any concerns.
+The bug was fixed and afterward, the player input color would be distinct from the print statement.
 
 ### Unsolved bugs
 None
@@ -164,14 +165,14 @@ This mistake reminded me of the power of flowcharts. The mistake will also influ
 The project was deployed to Heroku.
 The project can be accessed by [this](https://the-hangman-game-f82c19cb0385.herokuapp.com/) link.
 
-To run this project locally:
+How to run this project locally:
 
 1. This project requires Python to be installed. If you don't have Python, click [here](https://www.python.org/downloads/) to download.
 2. This project contains Python packages and dependencies. Therefore, you need to install pip. You can install pip by opening your terminal and pasting this `sudo apt install python3-pip` and then pressing enter.
 3. Clone this repository by copying this `git clone https://github.com/bianca9901/hangman.git` and pasting it into your terminal and then pressing enter.
 
 
-To deploy to Heroku:
+How to deploy to Heroku:
 
 1. Sign up to Heroku. Click [here](https://signup.heroku.com/login)
 
@@ -200,6 +201,7 @@ In the "Deployment method" section, click on GitHub. Then click on "Connect to G
 
 7. Search for your GitHub repository name, when this is filled in, you will be able to click "Connect".
 ![Repository name](documentation/images/deploy-instructions/repo-name.png)
+
 8. Scroll down to the "Manual deploy" section and click on "Deploy Branch"
 ![Manual deploy](documentation/images/deploy-instructions/deploy.png)
 
@@ -213,7 +215,7 @@ In the "Deployment method" section, click on GitHub. Then click on "Connect to G
 * [Colorama](https://pypi.org/project/colorama/) was used to implement colors.
 * [Simple terminal menu](https://pypi.org/project/simple-term-menu/) was used to implement the menus. 
 * [Heroku](https://id.heroku.com/login) was used to deploy my project.
-* [This](https://www.youtube.com/watch?v=u51Zjlnui4Y) video helped me learn how to reset the previously used color to default so that I could always start with a clean slate. 
+* [This](https://www.youtube.com/watch?v=u51Zjlnui4Y) video helped me learn how to apply colors with Colorama.
 * [This](https://www.csestack.org/clear-python-interpreter-console/) article together with the inspiration from my mentor taught me how to clear terminals.
 * [This](https://www.youtube.com/watch?v=Zpa-rc9e388) video together with the tips from my mentor taught me how to create menus.
 * [This](https://www.youtube.com/watch?v=cJJTnI22IF8) video gave me the idea to make the hangman game.  
