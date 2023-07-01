@@ -1,12 +1,10 @@
+import os
 import random
+from colorama import Fore, Back
+from simple_term_menu import TerminalMenu
 import hangman_stages
 import words_for_hangman
 import hangman_figure
-from simple_term_menu import TerminalMenu
-import os
-import colorama
-from colorama import Fore, Back
-colorama.init(autoreset=True)
 
 
 def go_back_to_menu():
@@ -33,7 +31,7 @@ def start_game_messages():
     print(Back.CYAN + '\nWelcome to Hangman! :-)\n')
     print('Starting game...')
     print('\nSuccessfully started!\n')
-    print(colorama.Fore.LIGHTYELLOW_EX)
+    print(Fore.LIGHTYELLOW_EX)
 
 
 def clear_screen():
