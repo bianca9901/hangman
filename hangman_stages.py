@@ -1,6 +1,5 @@
-import colorama
 from colorama import Fore
-colorama.init(autoreset=True)
+
 
 stages = [
     """
